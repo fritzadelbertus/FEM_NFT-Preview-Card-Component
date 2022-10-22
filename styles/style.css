@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* the variable is only for guidance 
+    Note: Ctrl + Shift + L to select same colors
+    */
+    --color-1: hsl(215, 51%, 70%);
+    --color-2: hsl(178, 100%, 50%);
+    --color-3: hsl(217, 54%, 11%);
+    --color-4: hsl(216, 50%, 16%);
+    --color-5: hsl(215, 32%, 27%);
+    --color-6:  hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+/* General Config */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    max-width: 375px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(215, 51%, 70%);
+    box-shadow: 0 2rem 1rem 1rem hsl(217, 60%, 11%);
+}
+
+/* Text Config */
+h1, span {
+    color: hsl(0, 0%, 100%);
+}
+h1 {
+    font-size: 1.2rem; 
+}
+p {
+    font-size: 1rem;
+}
+.ethereum-price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.main-text, .creator-info {
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+/* Layout Config */
+.creator-info, .ethereumandtime, h1 {
+    margin: 1rem 0;
+}
+
+.display-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.display-img-box{
+    position: relative;
+    display: block;
+}
+.avatar-image {
+    width: 2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.ether-icon{
+    width: 0.7rem;
+}
+.clock-icon {
+    width: 1rem;
+}
+hr {
+    color: hsl(215, 32%, 27%);
+}
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+.creator-info {
+    justify-content: unset;
+    gap: 1rem;
+}
+
+/* Hover Effect */
+h1:hover, span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+} 
+.hover-effect {
+    position: absolute;
+    top: 0;
+    max-width: 321px;
+    max-height: 321px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    z-index: 10;
+    opacity: 0%;
+    background-color: hsla(178, 100%, 50%, 0.616);
+}
+.hover-effect > img {
+    margin: 0 auto;
+}
+.hover-effect:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
